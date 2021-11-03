@@ -71,8 +71,8 @@ body {
   }
   /*header END*/
 
-/*main START*/
-main {
+  /*main START*/
+  main {
     margin-top: 40px;
     display: grid;
     justify-content: center;
@@ -103,7 +103,7 @@ main {
   /*main END*/
 
   /*footer START*/
-footer {
+  footer {
     display: flex;
     justify-content: center; /*center footer*/
   }
@@ -139,5 +139,4 @@ footer {
     font-size: 12px;
     color: black;
   }
-  
   /*footer END*/
