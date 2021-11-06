@@ -14,7 +14,7 @@ body {
   /*removes scroll bar END*/
   
   /*header START*/
-  nav {
+  .nav-bar-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -25,7 +25,7 @@ body {
     background-color: rgb(155, 155, 255);
   }
   
-  .header-btn {
+  .nav-btn {
     background-color: rgb(155, 155, 255);
     border: none;
     color: black;
@@ -33,7 +33,7 @@ body {
     transition: ease-out 0.2s;
   }
   
-  .header-btn:hover {
+  .nav-btn:hover {
     background-color: rgb(0, 3, 194);
     color: white;
     display: block;
@@ -42,7 +42,7 @@ body {
     align-items: center;
   }
   
-  nav a {
+  .nav-bar-container a {
     text-decoration: none;
     display: inline-block;
     position: relative;
