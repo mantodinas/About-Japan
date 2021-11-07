@@ -70,18 +70,15 @@ body::-webkit-scrollbar {
   color: white;
 }
 
-#main-page .holidays a { /*Nav indicator to main page*/
+#main-page .holidays a, 
+#festivals-page .festivals a, 
+#food-page .food a { /*Nav indicator to main, festivals, food pages*/
   background-color: blue;
+  color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
 }
-
-#festivals-page .festivals a { /*Nav indicator to festivals page*/
-  background-color: blue;
-}
-
-#food-page .food a { /*Nav indicator to food page*/
-  background-color: blue;
-}
-
 /*header END*/
 
 /*main START*/
