@@ -10,7 +10,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Smooth Scrolling Anchor Links END
 
 // Scroll up button START
-const toTop = document.querySelector(".to-top");
+const toTop = document.querySelector(".scroll-up");
 
 window.addEventListener("scroll", () => {
     if (window.pageYOffset > 100) {
