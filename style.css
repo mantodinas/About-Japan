@@ -13,6 +13,30 @@ body::-webkit-scrollbar {
 }
 /*removes scroll bar END*/
 
+/*scroll up button START*/
+.to-top img {
+  max-width: 30px;
+  background-color: red;
+  padding: 7px;
+  border-radius: 21px;
+}
+
+.to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 16px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+/*scroll up button END*/
+
 /*header START*/
 .nav-bar-container {
   display: flex;

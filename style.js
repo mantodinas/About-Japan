@@ -1,4 +1,4 @@
-// Smooth Scrolling Anchor Links
+// Smooth Scrolling Anchor Links START
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -7,3 +7,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+// Smooth Scrolling Anchor Links END
+
+// Scroll up button START
+const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 100) {
+        toTop.classList.add("active");
+    } else {
+        toTop.classList.remove("active");
+    }
+})
+// Scroll up button END
