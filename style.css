@@ -21,7 +21,7 @@ html {
 .scroll-up {
   opacity: 0;
   pointer-events: none;
-  transition: all 0.3s;  
+  transition: all 0.4s;  
 }
 
 .scroll-up.active {
@@ -52,7 +52,7 @@ html {
   border-bottom: transparent;
   border-right: transparent;
   margin-top: 30px;
-  animation: go-up 1.5s ease-in-out infinite;
+  animation: go-up 1.6s ease-in-out infinite;
 }
 
 @keyframes go-up {
