@@ -136,6 +136,48 @@ html {
   display: flex;
   align-items: center;
 }
+
+
+
+/* not finished */
+@media (max-width: 400px) {
+  header > .nav-btn-mobile {
+    position: fixed;
+    top: 2px;
+    right: 2px;
+    height: 45px;
+    width: 45px;
+    background-color: chartreuse;
+  }
+
+  .nav-bar-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header > .nav-bar-container > .nav-btn {
+    position: fixed;
+    top: 155px;
+  }
+
+  #main-page .holidays a, 
+  #festivals-page .festivals a, 
+  #food-page .food a { /*Nav indicator to main, festivals, food pages*/
+    display: none;
+  }
+
+  .nav-bar-container a {
+    display: flex;
+    background-color: green;
+    height: 50px;
+    top: 50px;
+  }
+
+}
+/* not finished */
+
+
+
 /*header END*/
 
 /*main START*/
