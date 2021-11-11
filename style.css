@@ -101,8 +101,6 @@ html {
 .nav-bar-container a {
   text-decoration: none;
   display: inline-block;
-  position: relative;
-  z-index: 1;
 }
 
 .header-img {
@@ -137,13 +135,13 @@ html {
   align-items: center;
 }
 
-header > .nav-btn-mobile {
+.dropdown-btn {
   display: none;
 }
 
 /* not finished */
 @media (max-width: 400px) {
-  header > .nav-btn-mobile {
+ .dropdown-btn {
     position: fixed;
     top: 2px;
     right: 2px;
@@ -157,29 +155,31 @@ header > .nav-btn-mobile {
   }
 
   .nav-bar-container {
-    display: flex;
-    flex-direction: column;
+    display: block;
   }
 
-  header > .nav-bar-container > .nav-btn {
-    position: fixed;
-    top: 155px;
+  .dropdown-btn:hover .nav-bar-container {
+    display: block;
   }
 
-  #main-page .holidays a, 
-  #festivals-page .festivals a, 
-  #food-page .food a { /*Nav indicator to main, festivals, food pages*/
+  .nav-btn {
     display: none;
-  }
-
-  .nav-bar-container a {
-    display: flex;
-    align-items: center;
-    background-color: green;
+    position: absolute;
+    float: right;
     height: 50px;
-    top: 50px;
+    min-width: 70%;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .dropdown-btn:hover .nav-bar a {
+    display: block;
   }
 
+  .nav-btn:hover {
+    display: block;
+  }
 }
 /* not finished */
 
