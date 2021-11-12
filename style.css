@@ -100,7 +100,7 @@ html {
   color: white;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   .topnav a:not(:first-child) {
     display: none;
   }
@@ -110,7 +110,7 @@ html {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   .topnav.responsive {
     position: relative;
   }
@@ -222,6 +222,30 @@ footer {
 .top .icon img {
   max-width: 30px;
 }
+
+/*tooltips start*/
+.icon { 
+  position: relative;
+}
+
+.icon:hover:after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 40px;
+  right: -13px;
+  background-color: #2a2a98;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  text-transform: capitalize;
+} 
+
+@media screen and (max-width: 480px) {
+  .icon:after {
+    display: none;
+  }
+}
+/*tooltips end (tooltips - hover text over icons)*/
 
 .bottom {
   display: flex;
