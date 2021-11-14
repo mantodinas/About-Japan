@@ -57,20 +57,34 @@ html {
     position: relative;
   }
   
-  .icon:hover:after {
+  .icon:hover:before {
     content: attr(data-tooltip);
     position: absolute;
-    bottom: 40px;
-    right: -13px;
+    bottom: 44px;
+    right: -17px;
     background-color: #2a2a98;
     color: white;
     padding: 5px;
     border-radius: 5px;
     text-transform: capitalize;
-  } 
+    transform-origin: bottom center;  /*animation goes from bottom*/
+  }
+
+  .icon:hover:after { /*tooltip arrow*/
+    content: '';
+    height: 10px;
+    width: 10px;
+    border: 1px transparent;
+    position: absolute;
+    transform: rotate(45deg);
+    bottom: 39px;
+    right: 9.5px;
+    background-color: #2a2a98;
+  }
   
   @media screen and (max-width: 480px) {
-    .icon:after {
+    .icon:after
+    .icon:before {
       display: none;
     }
   }
