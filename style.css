@@ -6,7 +6,7 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
   overflow-y: scroll;
-  background-color: #5757bc;
+  background-color: #5d58ad;
 }
 
 body::-webkit-scrollbar {
@@ -70,7 +70,7 @@ html {
 
 /*header START*/
 .topnav {
-  background-color: #9b9bff;
+  background-color: #7272c7;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -96,7 +96,7 @@ html {
 }
 
 .topnav a:hover {
-  background-color: #5757bc;
+  background-color: #404091;
   color: white;
 }
 
