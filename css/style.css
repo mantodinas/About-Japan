@@ -14,60 +14,6 @@ body::-webkit-scrollbar {
 }
 /*removes scroll bar END*/
 
-/*scroll up button START*/
-html {
-  scroll-behavior: smooth;
-}
-
-.scroll-up {
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.4s;
-}
-
-.scroll-up.active {
-  bottom: 32px;
-  pointer-events: auto;
-  opacity: 1;
-}
-
-.arrow-container {
-  position: fixed;
-  bottom: 50px;
-  right: 20px;
-  display: flex;
-  justify-content: center;
-  height: 50px;
-  width: 35px;
-  border-radius: 23px;
-  background-color: red;
-}
-
-.arrow {
-  position: fixed;
-  display: block;
-  height: 14px;
-  width: 14px;
-  border: 4px solid white;
-  transform: rotate(45deg);
-  border-bottom: transparent;
-  border-right: transparent;
-  margin-top: 30px;
-  animation: go-up 1.6s ease-in-out infinite;
-}
-
-@keyframes go-up {
-  100% {
-    margin-top: 10px;
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 80%;
-  }
-}
-/*scroll up button END*/
-
 /*header START*/
 .topnav {
   background-color: #7272c7;
@@ -222,30 +168,6 @@ footer {
 .top .icon img {
   max-width: 30px;
 }
-
-/*tooltips start*/
-.icon { 
-  position: relative;
-}
-
-.icon:hover:after {
-  content: attr(data-tooltip);
-  position: absolute;
-  bottom: 40px;
-  right: -13px;
-  background-color: #2a2a98;
-  color: white;
-  padding: 5px;
-  border-radius: 5px;
-  text-transform: capitalize;
-} 
-
-@media screen and (max-width: 480px) {
-  .icon:after {
-    display: none;
-  }
-}
-/*tooltips end (tooltips - hover text over icons)*/
 
 .bottom {
   display: flex;
