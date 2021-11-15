@@ -1,0 +1,1 @@
+main img in all pages croped to dimentions 6000px X 2500px (or cm)
