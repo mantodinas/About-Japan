@@ -187,8 +187,24 @@ height: 50px;
 .text-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+}
+
+.text-container h2 {
+  display: flex;
+  justify-self: flex-start;
+}
+
+.text-container p {
+  display: flex;
+  justify-self: center;
+  padding: 0 20px 0 20px;
+}
+
+.text-container h4 {
+  display: flex;
+  justify-self: flex-end;
+  padding: 0 20px 0 20px;
 }
 /*main END*/
 
