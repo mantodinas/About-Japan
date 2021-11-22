@@ -124,76 +124,72 @@ main {
   justify-content: center;
 }
 
-.main-container {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-areas: '.';
-  max-width: 950px; /*important line 1 for resposive width*/
-  width: 100%; /*important line 2 for resposive width*/
-  background-color: rgb(18, 107, 250);
+.section-container {
+display: grid;
+grid-template-columns: 35% 65%;
+grid-template-areas: "text-container slideshow-container";
+max-width: 950px;
+width: 100%;
+background-color: rgb(17, 82, 156);
 }
 
-h2 {
-  text-align: center;
+.slideshow-container {
+  max-width: 950px;
+  position: relative;
+  margin: auto;
 }
 
-p {
-  text-align: center;
-  padding: 0 20px 0 20px;
+.slideshow-container {
+grid-area: slideshow-container;
 }
 
-.main-container .one img {
-  max-width: 100%;
+.text-container {
+grid-area: text-container;
+}
+
+.mySlides1, .mySlides2, .mySlides3 {
+  display: none;
+}
+
+.slides-img {
+max-width: 100%;
+max-height: 100%;
+}
+
+.left, .right {
+position: absolute;
+top: 50%;
+cursor: pointer;
+width: auto;
+padding: 16px;
+color: white;
+font-size: 18px;
+}
+
+.right {
+right: 0;
+border-radius: 5px 0 0 5px;
+}
+
+.left {
+  border-radius: 0 5px 5px 0;
+}
+
+.left:hover, .right:hover {
+background-color: #f1f1f1;
+color: black;
+}
+
+.gap {
+height: 50px;
+}
+
+.text-container {
   display: flex;
-}
-/*------------------------box-container------------------------*/
-.box-container {
-  display: grid;
-  grid-template-columns: 40%, 60%;
-  grid-template-areas:
-    "box-text box-img"
-    "box-small-text box-small-text";
-  border: 1px solid red;
-  max-width: 960px;
-  width: 100%;
-}
-
-.box-small-text {
-  grid-area: box-small-text;
-  width: 100%;
-  max-height: 60px;
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid yellow;
 }
-
-.box-text { 
-  grid-area: box-text;
-  border: 1px solid green;
-  max-width: 350px;
-}
-
-.box-img { 
-  grid-area: box-img; 
-  border: 1px solid yellow;
-}
-
-.box-container .box-img img {
-  height: 500px;
-}
-
-.box-btn-left {
-  display: flex;
-  justify-content: left;
-}
-
-.box-btn-left {
-  display: flex;
-  justify-content: right;
-}
-/*------------------------box-container------------------------*/
-
 /*main END*/
 
 /*footer START*/
