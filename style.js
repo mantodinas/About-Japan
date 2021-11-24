@@ -33,11 +33,10 @@ function myFunction() {
 //images slides Holidays page START
 var slideIndex = [1, 1, 1, 1, 1];
 var slideId = ["holiday1", "holiday2", "holiday3", "holiday4"];
-var slideId = ["festival1", "festival2", "festival3"];
-  showSlides(1, 0);
-  showSlides(1, 1);
-  showSlides(1, 2);
-  showSlides(1, 3);
+  showSlides(1, 0);//holidai1
+  showSlides(1, 1);//holidai2
+  showSlides(1, 2);//holidai3
+  showSlides(1, 3);//holidai4
 
 function plusSlides(n, no) {
   showSlides((slideIndex[no] += n), no);
