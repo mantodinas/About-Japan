@@ -32,7 +32,7 @@ function myFunction() {
 
 //images slides Holidays page START
 var slideIndex = [1, 1, 1, 1, 1];
-var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"];
+var slideId = ["holiday1", "holiday2", "holiday3", "holiday4"];
   showSlides(1, 0);
   showSlides(1, 1);
   showSlides(1, 2);
