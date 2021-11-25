@@ -30,7 +30,7 @@ function myFunction() {
     }
 }
 
-//images slides START
+//images slides holiday START
 var slideIndex = [1, 1, 1, 1, 1];
 var slideId = ["holiday1", "holiday2", "holiday3", "holiday4"];
   showSlides(1, 0);//holidai1
@@ -56,4 +56,4 @@ function showSlides(n, no) {
   }
   x[slideIndex[no] - 1].style.display = "block";
 }
-//images slides END
+//images slides holiday END
