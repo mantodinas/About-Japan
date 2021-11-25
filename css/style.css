@@ -206,8 +206,7 @@ main {
 }
 
 .text-container h2 {
-  display: flex;
-  justify-self: flex-start;
+  text-align: center;
 }
 
 .text-container p {
