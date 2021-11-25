@@ -1,5 +1,5 @@
 //images slides holiday START
-var slideIndex = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+var slideIndex = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 var slideId = ["holiday1", "holiday2", "holiday3", "holiday4", "holiday5", "holiday6", "holiday7", "holiday8", "holiday9", "holiday10", "holiday11", "holiday12", "holiday13", "holiday14", "holiday15", "holiday16", "holiday17", "holiday18", "holiday19", "holiday20", "holiday21", "holiday22", "holiday23", "holiday24", "holiday25"];
   showSlides(1, 0);//holidai1
   showSlides(1, 1);//holidai2
