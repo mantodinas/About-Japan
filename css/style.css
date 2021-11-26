@@ -216,6 +216,16 @@ main {
 .text-container h4 {
   padding: 0 20px 0 20px;
 }
+
+.holidays-all-container {
+  max-width: 950px;
+  width: 100%;
+  background-color: #7272c7;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px 0;
+}
 /*main END----------------------------------------------------------------------------------*/
 
 /*footer START------------------------------------------------------------------------------*/
