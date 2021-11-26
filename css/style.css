@@ -226,6 +226,11 @@ main {
   justify-content: center;
   padding: 10px 0 10px 0;
 }
+
+.holidays-all-container th {
+  border: 1px solid white;
+  padding: 5px 10px 5px 10px;
+}
 /*main END----------------------------------------------------------------------------------*/
 
 /*footer START------------------------------------------------------------------------------*/
