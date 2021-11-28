@@ -216,7 +216,7 @@ main {
 .text-container h4 {
   padding: 0 20px 0 20px;
 }
-/*table*/
+/*table START*/
 .holidays-all-container {
   max-width: 950px;
   width: 100%;
@@ -250,7 +250,7 @@ main {
   border-radius: 10px;
   
 }
-/*table*/
+/*table END*/
 /*main END----------------------------------------------------------------------------------*/
 
 /*footer START------------------------------------------------------------------------------*/
