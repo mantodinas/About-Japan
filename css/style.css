@@ -216,7 +216,7 @@ main {
 .text-container h4 {
   padding: 0 20px 0 20px;
 }
-
+/*table*/
 .holidays-all-container {
   max-width: 950px;
   width: 100%;
@@ -235,19 +235,22 @@ main {
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
-  height: 12px;
-  }
+  width: 15px;
+  max-height: 10px;
+  overflow: scroll;
+}
   
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   border: 1px solid #2a2a98;
   border-radius: 10px;
-  }
+}
   
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background: #2a2a98;  
   border-radius: 10px;
-  }
+  
+}
+/*table*/
 /*main END----------------------------------------------------------------------------------*/
 
 /*footer START------------------------------------------------------------------------------*/
