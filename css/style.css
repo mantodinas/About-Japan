@@ -216,7 +216,7 @@ main {
 .text-container h4 {
   padding: 0 20px 0 20px;
 }
-/*table*/
+/*table START*/
 .holidays-all-container {
   max-width: 950px;
   width: 100%;
@@ -248,9 +248,26 @@ main {
 ::-webkit-scrollbar-thumb {
   background: #2a2a98;  
   border-radius: 10px;
-  
 }
-/*table*/
+
+.table-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.table-btn {
+  background-color: rgb(0, 3, 194);
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: ease-in 0.2s;
+}
+
+.table-btn:hover {
+  background-color: rgb(44, 171, 255);
+  font-size: 15px;
+}
+/*table END*/
 /*main END----------------------------------------------------------------------------------*/
 
 /*footer START------------------------------------------------------------------------------*/
