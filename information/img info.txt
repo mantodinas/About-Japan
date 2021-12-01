@@ -1,0 +1,2 @@
+image ratio 2:3(4:6)
+image size 900 x 600px
