@@ -134,7 +134,7 @@ main {
   border-radius: 10px;
 }
 
-@media screen and (max-width: 655px) {
+@media screen and (max-width: 741px) {
   .section-container {
     display: grid;
     grid-template-columns: 100%;
@@ -213,8 +213,30 @@ main {
   padding: 0 20px 0 20px;
 }
 
-.text-container h4 {
-  padding: 0 20px 0 20px;
+.wikipedia-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #525294;
+  border-radius: 10px;
+  height: 33px;
+  padding: 0 0 0 0;
+}
+
+.wikipedia-info img {
+  max-height: 25px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: right;
+}
+
+.wikipedia-info p {
+  color: black;
+  padding: 0px 5px 0 5px;
+  display: flex;
+  align-items: center;
 }
 /*table START*/
 .holidays-all-container {
