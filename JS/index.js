@@ -1,6 +1,6 @@
 //images slides holiday START
 var slideIndex = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
-var slideId = ["holiday1", "holiday2", "holiday3", "holiday4", "holiday5", "holiday6", "holiday7", "holiday8", "holiday9", "holiday10", "holiday11", "holiday12", "holiday13", "holiday14", "holiday15", "holiday16", "holiday17", "holiday18", "holiday19", "holiday20", "holiday21", "holiday22", "holiday23", "holiday24", "holiday25"];
+var slideId = ["holiday1", "holiday2", "holiday3", "holiday4", "holiday5", "holiday6", "holiday7", "holiday8", "holiday9", "holiday10", "holiday11", "holiday12", "holiday13", "holiday14", "holiday15", "holiday16", "holiday17", "holiday18", "holiday19", "holiday20", "holiday21", "holiday22", "holiday23", "holiday24"];
   showSlides(1, 0);//holidai1
   showSlides(1, 1);//holidai2
   showSlides(1, 2);//holidai3
@@ -25,7 +25,6 @@ var slideId = ["holiday1", "holiday2", "holiday3", "holiday4", "holiday5", "holi
   showSlides(1, 21);//holidai22
   showSlides(1, 22);//holidai23
   showSlides(1, 23);//holidai24
-  showSlides(1, 24);//holidai25
 
 function plusSlides(n, no) {
   showSlides((slideIndex[no] += n), no);
