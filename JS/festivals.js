@@ -1,9 +1,14 @@
 //images slides festival START
-var slideIndex = [1, 1, 1, 1, 1];
-var slideId = ["festival1", "festival2", "festival3"];
+var slideIndex = [1, 1, 1, 1, 1, 1, 1, 1];
+var slideId = ["festival1", "festival2", "festival3", "festival4", "festival5", "festival6", "festival7", "festival8",];
   showSlides(1, 0);//festival1
   showSlides(1, 1);//festival2
   showSlides(1, 2);//festival3
+  showSlides(1, 3);//festival4
+  showSlides(1, 4);//festival5
+  showSlides(1, 5);//festival6
+  showSlides(1, 6);//festival7
+  showSlides(1, 7);//festival8
 
 function plusSlides(n, no) {
   showSlides((slideIndex[no] += n), no);
