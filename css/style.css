@@ -135,7 +135,7 @@ main {
   box-shadow: 5px 3px 30px 0.3px;
 }
 
-@media screen and (max-width: 741px) {
+@media screen and (max-width: 847px) {
   .section-container {
     display: grid;
     grid-template-columns: 100%;
@@ -244,9 +244,9 @@ main {
   justify-content: right;
 }
 
-@media screen and (max-width: 741px) {
+@media screen and (max-width: 847px) {
   .wikipedia-info {
-    margin-bottom: 12px;
+    margin-bottom: 23px;
   }
 }
 
