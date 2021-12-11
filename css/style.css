@@ -257,7 +257,7 @@ main {
   align-items: center;
 }
 /*table START*/
-.holidays-all-container {
+.table-container {
   max-width: 950px;
   width: 100%;
   background-color: #7272c7;
@@ -269,7 +269,7 @@ main {
   overflow:auto;
 }
 
-.holidays-all-container th {
+.table-container th {
   border: 1px solid white;
   padding: 5px 10px 5px 10px;
 }
