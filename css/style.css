@@ -37,13 +37,15 @@ body { /*background pattern*/
 }
 
 /* Add an active class to highlight the current page */
-.active {
+.nav-active {
   background-color: #2a2a98;
   color: white;
 }
 
 .topnav .icon {
   display: none;
+  border: 1px solid white;
+  border-radius: 10px;
 }
 
 .topnav a:hover {
