@@ -87,5 +87,10 @@ html {
     .icon:before {
       display: none;
     }
+
+    .icon:hover:before, 
+    .icon:hover:after{
+      display: none;
+    }
   }
   /*tooltips end (tooltips - hover text over icons if footer)*/
