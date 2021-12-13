@@ -191,10 +191,6 @@ main {
   color: rgb(29, 29, 29);
 }
 
-.mySlides1, .mySlides2, .mySlides3 {
-  display: none;
-}
-
 .slides-img {
   max-width: 100%;
   max-height: 100%;
@@ -228,14 +224,30 @@ main {
   height: 50px;
 }
 
-.text-container h1 {
+.text-container h2 {
   text-align: center;
   text-transform: capitalize;
   font-size: 30px;
 }
 
-@media screen and (max-width: 814px) {
-  .text-container h1 {
+@media screen and (max-width: 900px) {
+  .text-container h2 {
+  margin-bottom: 0px;
+  margin-top: 5px;
+  }
+}
+
+
+.white {
+  color: white
+}
+
+.japanese-text, .english-text {
+  color: #3939a0;
+}
+
+@media screen and (max-width: 654px) {
+  .text-container h2 {
     font-size: 25px;
   }
 }
