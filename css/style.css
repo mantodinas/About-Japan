@@ -25,6 +25,7 @@ body { /*background pattern*/
   overflow: hidden;
   display: flex;
   justify-content: center;
+  font-family: verdana;
 }
 
 /* Style the links inside the navigation bar */
@@ -160,6 +161,18 @@ main {
   margin: 40px 10px 0 10px;
 }
 
+.main-header {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "text-container";
+  max-width: 950px;
+  width: 100%;
+  background-color: #7272c7;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 5px 3px 30px 0.3px;
+  padding-bottom: 20px;
+}
+
 .section-container {
   display: grid;
   grid-template-columns: 35% 65%;
@@ -171,14 +184,14 @@ main {
   box-shadow: 5px 3px 30px 0.3px;
 }
 
-@media screen and (max-width: 847px) {
+@media screen and (max-width: 933px) {
   .section-container {
     display: grid;
     grid-template-columns: 100%;
     grid-template-areas:  
       "slideshow-container"
       "text-container";
-    max-width: 950px;
+    max-width: 1000px;
     width: 100%;
     background-color: #7272c7;
     border-radius: 10px;
@@ -187,7 +200,7 @@ main {
 
 .slideshow-container {
   grid-area: slideshow-container;
-  max-width: 950px;
+  max-width: 1000px;
   position: relative;
 }
 
@@ -196,14 +209,6 @@ main {
   justify-content: center;
 }
 
-.text-container {
-  grid-area: text-container;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: rgb(29, 29, 29);
-}
 
 .slides-img {
   max-width: 100%;
@@ -234,23 +239,24 @@ main {
   color: black;
 }
 
-.gap {
-  height: 50px;
+.text-container, .text-container2 {
+  grid-area: text-container;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(29, 29, 29);
+  font-family: verdana;
 }
 
-.text-container h2 {
+.text-container h2, .text-container2 h2 {
   text-align: center;
   text-transform: capitalize;
   font-size: 30px;
-}
-
-@media screen and (max-width: 900px) {
-  .text-container h2 {
+  font-weight: 900;
   margin-bottom: 0px;
-  margin-top: 5px;
-  }
+  padding: 0 5px 0 5px;
 }
-
 
 .white {
   color: white
@@ -261,16 +267,17 @@ main {
 }
 
 @media screen and (max-width: 654px) {
-  .text-container h2 {
+  .text-container h2, .text-container2 h2 {
     font-size: 25px;
   }
 }
 
-.text-container p {
+.text-container p, .text-container2 p {
   padding: 20px;
   background-color: #525294;
   width: 80%;
   border-radius: 10px;
+  font-weight: 500;
 }
 
 .wikipedia-info {
@@ -292,7 +299,7 @@ main {
   justify-content: right;
 }
 
-@media screen and (max-width: 847px) {
+@media screen and (max-width: 933px) {
   .wikipedia-info {
     margin-bottom: 23px;
   }
@@ -304,6 +311,11 @@ main {
   display: flex;
   align-items: center;
 }
+
+.gap {
+  height: 50px;
+}
+
 /*table START*/
 .table-container {
   max-width: 950px;
