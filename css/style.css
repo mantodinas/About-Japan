@@ -25,6 +25,7 @@ body { /*background pattern*/
   overflow: hidden;
   display: flex;
   justify-content: center;
+  font-family: verdana;
 }
 
 /* Style the links inside the navigation bar */
@@ -169,6 +170,7 @@ main {
   background-color: #7272c7;
   border-radius: 10px 10px 0 0;
   box-shadow: 5px 3px 30px 0.3px;
+  padding-bottom: 20px;
 }
 
 .section-container {
@@ -182,14 +184,14 @@ main {
   box-shadow: 5px 3px 30px 0.3px;
 }
 
-@media screen and (max-width: 847px) {
+@media screen and (max-width: 933px) {
   .section-container {
     display: grid;
     grid-template-columns: 100%;
     grid-template-areas:  
       "slideshow-container"
       "text-container";
-    max-width: 950px;
+    max-width: 1000px;
     width: 100%;
     background-color: #7272c7;
     border-radius: 10px;
@@ -198,7 +200,7 @@ main {
 
 .slideshow-container {
   grid-area: slideshow-container;
-  max-width: 950px;
+  max-width: 1000px;
   position: relative;
 }
 
@@ -245,20 +247,14 @@ main {
   justify-content: center;
   color: rgb(29, 29, 29);
   font-family: verdana;
-  font-weight: 500;
 }
 
-.text-container h2 {
+.text-container h2, .text-container2 h2 {
   text-align: center;
   text-transform: capitalize;
   font-size: 30px;
-}
-
-@media screen and (max-width: 900px) {
-  .text-container h2 {
-    margin-bottom: 0px;
-    margin-top: 5px;
-  }
+  font-weight: 900;
+  margin-bottom: 0px;
 }
 
 .white {
@@ -270,16 +266,17 @@ main {
 }
 
 @media screen and (max-width: 654px) {
-  .text-container h2 {
+  .text-container h2, .text-container2 h2 {
     font-size: 25px;
   }
 }
 
-.text-container p {
+.text-container p, .text-container2 p {
   padding: 20px;
   background-color: #525294;
   width: 80%;
   border-radius: 10px;
+  font-weight: 500;
 }
 
 .wikipedia-info {
@@ -301,7 +298,7 @@ main {
   justify-content: right;
 }
 
-@media screen and (max-width: 847px) {
+@media screen and (max-width: 933px) {
   .wikipedia-info {
     margin-bottom: 23px;
   }
