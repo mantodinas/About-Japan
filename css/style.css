@@ -207,15 +207,7 @@ main {
   justify-content: center;
 }
 
-.text-container {
-  grid-area: text-container;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: rgb(29, 29, 29);
-}
- 
+
 .slides-img {
   max-width: 100%;
   max-height: 100%;
@@ -245,8 +237,15 @@ main {
   color: black;
 }
 
-.gap {
-  height: 50px;
+.text-container, .text-container2 {
+  grid-area: text-container;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(29, 29, 29);
+  font-family: verdana;
+  font-weight: 500;
 }
 
 .text-container h2 {
@@ -257,11 +256,10 @@ main {
 
 @media screen and (max-width: 900px) {
   .text-container h2 {
-  margin-bottom: 0px;
-  margin-top: 5px;
+    margin-bottom: 0px;
+    margin-top: 5px;
   }
 }
-
 
 .white {
   color: white
@@ -315,6 +313,11 @@ main {
   display: flex;
   align-items: center;
 }
+
+.gap {
+  height: 50px;
+}
+
 /*table START*/
 .table-container {
   max-width: 950px;
