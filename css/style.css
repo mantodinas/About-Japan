@@ -342,7 +342,7 @@ table {
 }
 
 .table-letter-color {
-  color: #3939a0;
+  color: #c4c4fd;
 }
 
 table tr:nth-child(even){background-color: #525294;}
@@ -350,7 +350,7 @@ table tr:nth-child(even){background-color: #525294;}
 table th {
   padding-bottom: 12px;
   text-align: left;
-  background-color: #041daa;
+  background-color: #313158;
   color: white;
 }
 
@@ -363,6 +363,7 @@ table th {
   
 ::-webkit-scrollbar-thumb {
   background: #2a2a98;  
+  border: 0.2px solid #b4b4eb;
   border-radius: 10px;
 }
 
@@ -372,7 +373,7 @@ table th {
 }
 
 .table-btn {
-  background-color: rgb(0, 3, 194);
+  background-color: #2a2a98;
   color: white;
   cursor: pointer;
   transition: ease-in 0.2s;
@@ -381,7 +382,12 @@ table th {
 }
 
 .table-btn:hover {
-  background-color: rgb(44, 171, 255);
+  background-color: #6b6bce;
+  color: white;
+}
+
+table tr:hover {
+  background-color: #6969ee;
 }
 
 @media screen and (max-width: 368px) {
