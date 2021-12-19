@@ -337,7 +337,7 @@ table {
 
 @media screen and (max-width: 350px) {
   .table-container th, .table-container td {
-    padding: 4px;
+    padding: 2px;
   }
 }
 
@@ -378,6 +378,13 @@ table th {
 
 .table-btn:hover {
   background-color: rgb(44, 171, 255);
+}
+
+@media screen and (max-width: 368px) {
+  .nr {
+    display: none;
+  }
+
 }
 /*table END*/
 /*main END----------------------------------------------------------------------------------*/
