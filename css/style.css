@@ -218,17 +218,19 @@ main {
   cursor: pointer;
   width: auto;
   padding: 16px;
-  color: white;
+  color: #7272c7;
   font-size: 18px;
 }
 
 .right {
   right: 0;
   border-radius: 5px 0 0 5px;
+  background-color: #ffffff77;
 }
 
 .left {
   border-radius: 0 5px 5px 0;
+  background-color: #ffffff77;
 }
 
 .left:hover, .right:hover {
