@@ -1,96 +1,117 @@
 /*scroll up button START*/
 html {
-    scroll-behavior: smooth;
-  }
-  
-  .scroll-up {
+  scroll-behavior: smooth;
+}
+
+.scroll-up {
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.scroll-up.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.arrow-container {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  width: 35px;
+  border-radius: 23px;
+  background-color: red;
+}
+
+.arrow-container .arrow {
+  position: fixed;
+  display: block;
+  height: 14px;
+  width: 14px;
+  border: 4px solid white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-bottom: transparent;
+  border-right: transparent;
+  margin-top: 30px;
+  -webkit-animation: go-up 1.6s ease-in-out infinite;
+          animation: go-up 1.6s ease-in-out infinite;
+}
+
+@-webkit-keyframes go-up {
+  100% {
+    margin-top: 10px;
     opacity: 0;
-    pointer-events: none;
-    transition: all 0.4s;
   }
-  
-  .scroll-up.active {
-    bottom: 32px;
-    pointer-events: auto;
-    opacity: 1;
+  50% {
+    opacity: 80%;
   }
-  
-  .arrow-container {
-    position: fixed;
-    bottom: 50px;
-    right: 20px;
-    display: flex;
-    justify-content: center;
-    height: 50px;
-    width: 35px;
-    border-radius: 23px;
-    background-color: red;
-  }
-  
-  .arrow {
-    position: fixed;
-    display: block;
-    height: 14px;
-    width: 14px;
-    border: 4px solid white;
-    transform: rotate(45deg);
-    border-bottom: transparent;
-    border-right: transparent;
-    margin-top: 30px;
-    animation: go-up 1.6s ease-in-out infinite;
-  }
-  
-  @keyframes go-up {
-    100% {
-      margin-top: 10px;
-      opacity: 0;
-    }
-  
-    50% {
-      opacity: 80%;
-    }
-  }
-  /*scroll up button END*/
+}
 
-  /*tooltips start*/
-.icon { 
-    position: relative;
+@keyframes go-up {
+  100% {
+    margin-top: 10px;
+    opacity: 0;
   }
-  
-  .icon:hover:before {
-    content: attr(data-tooltip);
-    position: absolute;
-    bottom: 44px;
-    right: -17px;
-    background-color: #2a2a98;
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    text-transform: capitalize;
-    transform-origin: bottom center;  /*animation goes from bottom*/
+  50% {
+    opacity: 80%;
   }
+}
 
-  .icon:hover:after { /*tooltip arrow*/
-    content: '';
-    height: 10px;
-    width: 10px;
-    border: 1px transparent;
-    position: absolute;
-    transform: rotate(45deg);
-    bottom: 39px;
-    right: 9.5px;
-    background-color: #2a2a98;
-  }
-  
-  @media screen and (max-width: 480px) {
-    .icon:after
-    .icon:before {
-      display: none;
-    }
+/*scroll up button END*/
+/*tooltips start*/
+.icon {
+  position: relative;
+}
 
-    .icon:hover:before, 
-    .icon:hover:after{
-      display: none;
-    }
+.icon:hover:before {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 44px;
+  right: -17px;
+  background-color: #2a2a98;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  /*animation goes from bottom*/
+}
+
+.icon:hover:after {
+  /*tooltip arrow*/
+  content: '';
+  height: 10px;
+  width: 10px;
+  border: 1px transparent;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  bottom: 39px;
+  right: 9.5px;
+  background-color: #2a2a98;
+}
+
+@media screen and (max-width: 480px) {
+  .icon:after
+.icon:before {
+    display: none;
   }
-  /*tooltips end (tooltips - hover text over icons if footer)*/
+  .icon:hover:before,
+  .icon:hover:after {
+    display: none;
+  }
+}
+
+/*tooltips end (tooltips - hover text over icons if footer)*/
+/*# sourceMappingURL=components.css.map */
