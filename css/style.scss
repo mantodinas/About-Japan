@@ -306,6 +306,12 @@ body {
     border-radius: 10px;
     height: 300px;
     overflow-x: hidden;
+
+    @media screen and (max-width: 368px) {
+      .nr {
+        display: none;
+      }
+    }
     
     table {
       border-collapse: collapse;
@@ -313,7 +319,7 @@ body {
       text-transform: capitalize;
       font-family: verdana;
       overflow-x: hidden;
-
+      
       th, td {
         padding: 8px;
 
@@ -322,24 +328,46 @@ body {
         }
       }
 
+      th {
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #313158;
+        color: white;
+      }
+
       .table-letter-color {
         color: #c4c4fd;
       }
+      
+      tr {
+
+        &:nth-child(even){background-color: #525294;}
+
+        &:hover {
+          background-color: #6969ee;
+        }
+        
+        .table-btn {
+          background-color: #2a2a98;
+          color: white;
+          cursor: pointer;
+          transition: ease-in 0.2s;
+          text-align: center;
+          border: 0.5px solid white;
+  
+          &:hover {
+            background-color: #6b6bce;
+            color: white;
+          }
+  
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
 
     }
-  }
-  
-  
-  
-  
-  
-  table tr:nth-child(even){background-color: #525294;}
-  
-  table th {
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #313158;
-    color: white;
   }
   
   ::-webkit-scrollbar {
@@ -353,36 +381,6 @@ body {
     background: #2a2a98;  
     border: 0.2px solid #b4b4eb;
     border-radius: 10px;
-  }
-  
-  .table-btn a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  .table-btn {
-    background-color: #2a2a98;
-    color: white;
-    cursor: pointer;
-    transition: ease-in 0.2s;
-    text-align: center;
-    border: 0.5px solid white;
-  }
-  
-  .table-btn:hover {
-    background-color: #6b6bce;
-    color: white;
-  }
-  
-  table tr:hover {
-    background-color: #6969ee;
-  }
-  
-  @media screen and (max-width: 368px) {
-    .nr {
-      display: none;
-    }
-  
   }
   /*table END*/
   /*main END----------------------------------------------------------------------------------*/
@@ -427,8 +425,4 @@ body {
       }
     }
   }
-  
-  
-  
-  
   /*footer END----------------------------------------------------------------------------*/
