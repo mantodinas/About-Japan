@@ -267,7 +267,7 @@ main .main-header {
   font-family: verdana;
 }
 
-.text-container h2, .text-container h2, .text-container2 h2, .text-container2 h2 {
+.text-container h2, .text-container2 h2 {
   text-align: center;
   text-transform: capitalize;
   font-size: 30px;
@@ -276,14 +276,14 @@ main .main-header {
   padding: 0 5px 0 5px;
 }
 
-@media screen and (max-width: 654px) {
-  .text-container h2, .text-container h2, .text-container2 h2, .text-container2 h2 {
-    font-size: 25px;
-  }
+.text-container h2 .japanese-text, .text-container h2 .english-text, .text-container2 h2 .japanese-text, .text-container2 h2 .english-text {
+  color: #3939a0;
 }
 
-.japanese-text, .english-text {
-  color: #3939a0;
+@media screen and (max-width: 654px) {
+  .text-container h2, .text-container2 h2 {
+    font-size: 25px;
+  }
 }
 
 .text-container p, .text-container2 p {
@@ -311,19 +311,6 @@ main .main-header {
   padding: 0 0 0 0;
 }
 
-.wikipedia-info img {
-  max-height: 25px;
-  background-color: white;
-  padding: 10px;
-  border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-}
-
 @media screen and (max-width: 933px) {
   .wikipedia-info {
     margin-bottom: 23px;
@@ -341,6 +328,19 @@ main .main-header {
           align-items: center;
 }
 
+.wikipedia-info img {
+  max-height: 25px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
 .gap {
   height: 50px;
 }
@@ -355,7 +355,7 @@ main .main-header {
   overflow-x: hidden;
 }
 
-table {
+.table-container table {
   border-collapse: collapse;
   width: 100%;
   text-transform: capitalize;
@@ -363,17 +363,17 @@ table {
   overflow-x: hidden;
 }
 
-.table-container th, .table-container td {
+.table-container table th, .table-container table td {
   padding: 8px;
 }
 
 @media screen and (max-width: 350px) {
-  .table-container th, .table-container td {
+  .table-container table th, .table-container table td {
     padding: 2px;
   }
 }
 
-.table-letter-color {
+.table-container table .table-letter-color {
   color: #c4c4fd;
 }
 
@@ -441,10 +441,9 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /*center footer*/
 }
 
-.footer-container {
+footer .footer-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 65px 80px;
@@ -456,7 +455,7 @@ footer {
   background-color: #7272c7;
 }
 
-.top {
+footer .footer-container .top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -475,11 +474,11 @@ footer {
   border-bottom: 1.5px solid #292929;
 }
 
-.top .icon img {
+footer .footer-container .top .icon img {
   max-width: 30px;
 }
 
-.bottom {
+footer .footer-container .bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -492,6 +491,7 @@ footer {
   padding: 2px 15px 0 15px;
   font-size: 12px;
   color: black;
+  text-align: center;
 }
 
 /*footer END----------------------------------------------------------------------------*/

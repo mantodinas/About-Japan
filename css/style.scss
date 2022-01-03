@@ -238,7 +238,7 @@ body {
     color: rgb(29, 29, 29);
     font-family: verdana;
 
-    h2, h2 {
+    h2 {
       text-align: center;
       text-transform: capitalize;
       font-size: 30px;
@@ -246,24 +246,23 @@ body {
       margin-bottom: 0px;
       padding: 0 5px 0 5px;
 
+      .japanese-text, .english-text {
+        color: #3939a0;
+      }
+
       @media screen and (max-width: 654px) {
           font-size: 25px;
       }
     }
+
+    p {
+      padding: 20px;
+      background-color: #525294;
+      width: 80%;
+      border-radius: 10px;
+      font-weight: 500;
+    }
   }
-  
-  .japanese-text, .english-text {
-    color: #3939a0;
-  }
-  
-  .text-container p, .text-container2 p {
-    padding: 20px;
-    background-color: #525294;
-    width: 80%;
-    border-radius: 10px;
-    font-weight: 500;
-  }
-  
   
   .wikipedia-info {
     display: flex;
@@ -273,34 +272,32 @@ body {
     border-radius: 10px;
     height: 33px;
     padding: 0 0 0 0;
-  }
-  
-  .wikipedia-info img {
-    max-height: 25px;
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: right;
-  }
-  
-  @media screen and (max-width: 933px) {
-    .wikipedia-info {
-      margin-bottom: 23px;
+
+    @media screen and (max-width: 933px) {
+        margin-bottom: 23px;
     }
-  }
-  
-  .wikipedia-info p {
-    color: black;
-    padding: 0px 5px 0 5px;
-    display: flex;
-    align-items: center;
+
+    p {
+      color: black;
+      padding: 0px 5px 0 5px;
+      display: flex;
+      align-items: center;
+    }
+
+    img {
+      max-height: 25px;
+      background-color: white;
+      padding: 10px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: right;
+    }
   }
   
   .gap {
     height: 50px;
   }
-  
+
   /*table START*/
   .table-container {
     max-width: 950px;
@@ -309,29 +306,32 @@ body {
     border-radius: 10px;
     height: 300px;
     overflow-x: hidden;
-  }
-  
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    text-transform: capitalize;
-    font-family: verdana;
-    overflow-x: hidden;
-  }
-  
-  .table-container th, .table-container td {
-    padding: 8px;
-  }
-  
-  @media screen and (max-width: 350px) {
-    .table-container th, .table-container td {
-      padding: 2px;
+    
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      text-transform: capitalize;
+      font-family: verdana;
+      overflow-x: hidden;
+
+      th, td {
+        padding: 8px;
+
+        @media screen and (max-width: 350px) {
+            padding: 2px;
+        }
+      }
+
+      .table-letter-color {
+        color: #c4c4fd;
+      }
+
     }
   }
   
-  .table-letter-color {
-    color: #c4c4fd;
-  }
+  
+  
+  
   
   table tr:nth-child(even){background-color: #525294;}
   
@@ -390,38 +390,45 @@ body {
   /*footer START------------------------------------------------------------------------------*/
   footer {
     display: flex;
-    justify-content: center; /*center footer*/
-  }
-  
-  .footer-container {
-    display: grid;
-    grid-template-rows: 65px 80px;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 40px;
-    background-color: #7272c7;
-  }
-  
-  .top {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    gap: 15px;
-    padding: 15px 10px 4px 10px;
-    border-bottom: 1.5px solid rgb(41, 41, 41);
+
+    .footer-container {
+      display: grid;
+      grid-template-rows: 65px 80px;
+      justify-content: space-around;
+      width: 100%;
+      margin-top: 40px;
+      background-color: #7272c7;
+
+      .top {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 10px 4px 10px;
+        border-bottom: 1.5px solid rgb(41, 41, 41);
+
+        .icon {
+          img {
+            max-width: 30px;
+          }
+        } 
+      }
+
+      .bottom {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 2px 15px 0 15px;
+        font-size: 12px;
+        color: black;
+        text-align: center;
+      }
+    }
   }
   
-  .top .icon img {
-    max-width: 30px;
-  }
   
-  .bottom {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 2px 15px 0 15px;
-    font-size: 12px;
-    color: black;
-  }
+  
+  
   /*footer END----------------------------------------------------------------------------*/
