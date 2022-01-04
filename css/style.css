@@ -58,7 +58,7 @@ header .topnav .icon {
   header .topnav a {
     display: none;
   }
-  header .topnav a.icon {
+  header .topnav .icon {
     float: right;
     display: block;
   }
@@ -77,7 +77,7 @@ header .topnav .icon {
     display: block;
     text-align: center;
   }
-  header .responsive a .icon {
+  header .responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
