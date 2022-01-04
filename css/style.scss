@@ -56,7 +56,8 @@ body {
         a {
           display: none;
         }
-        a.icon {
+        
+        .icon {
           float: right;
           display: block;
         }
@@ -75,11 +76,12 @@ body {
           display: block;
           text-align: center;
 
-          .icon {
-            position: absolute;
-            right: 0;
-            top: 0;
-          }
+        }
+        
+        .icon {
+          position: absolute;
+          right: 0;
+          top: 0;
         }
       }
 
