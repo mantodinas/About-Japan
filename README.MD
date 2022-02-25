@@ -1,6 +1,6 @@
 Website created for educational purposes
 learning and improving front end.
 
-Site published at: https://mantodinas.github.io/About-Japan/
+Site published at: http://www.aboutjapan.info/
 
 Designed by Mantas Petrauskas
