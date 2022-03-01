@@ -2,6 +2,7 @@
 Site published at: http://www.aboutjapan.info/
 
 ![screenshot](./img/web-screenshots/screenschot1.jpg)
+
 ![screenshot](./img/web-screenshots/screenschot2.jpg)
 
 Website created for educational purposes
