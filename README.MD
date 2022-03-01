@@ -1,5 +1,5 @@
 # About Japan
-Site published at: http://www.aboutjapan.info/
+Website published at: http://www.aboutjapan.info/
 
 ![screenshot](./img/web-screenshots/screenschot1.jpg)
 
