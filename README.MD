@@ -5,7 +5,7 @@
 </p>
 
 Was used Visual Studio Code plugin Live SASS Compiler to Compile SCSS to CSS.
-Project has responsive design pc, tablet, mobile.
+<br>Project has responsive design pc, tablet, mobile.
 
 Website created for educational purposes
 learning and improving front end.
