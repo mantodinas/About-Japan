@@ -13,7 +13,7 @@ learning and improving front-end.
 Website published at: http://www.aboutjapan.info/
 
 Designed and created by Mantas Petrauskas 
-more projects https://github.com/mantodinas
+<br>more projects https://github.com/mantodinas
 
 ![screenshot](./img/web-screenshots/screenschot1.jpg)
 
