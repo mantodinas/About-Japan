@@ -5,6 +5,7 @@
 </p>
 
 Was used Visual Studio Code SCSS plugin compiler to make css.
+Project has responsive design pc, tablet, mobile.
 
 Website created for educational purposes
 learning and improving front end.
