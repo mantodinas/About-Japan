@@ -1,6 +1,8 @@
 # About Japan
 Website published at: http://www.aboutjapan.info/
 
+</a> <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a>
+
 Static website was created using HTML, CSS, SCSS, JavaScript.
 Was used Visual Studio Code SCSS plugin compiler to make css.
 
