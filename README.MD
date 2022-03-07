@@ -8,7 +8,7 @@ Was used Visual Studio Code plugin __Live SASS Compiler__ to Compile SCSS to CSS
 <br>Project has responsive design pc, tablet, mobile.
 
 Website created for educational purposes
-learning and improving front end.
+learning and improving front-end.
 
 Website published at: http://www.aboutjapan.info/
 
